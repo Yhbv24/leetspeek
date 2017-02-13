@@ -41,5 +41,18 @@
             // Assert
             $this->assertEquals("1 like to sit", $result);
         }
+
+        function test_s_check()
+        {
+            // Arrange
+            $test_Leet = new Leet;
+            $input  = "I likes to sit";
+
+            // Act
+            $result = $test_Leet->s_check($input);
+
+            // Assert
+            $this->assertEquals("I likez to zit", $result);
+        }
     }
  ?>
