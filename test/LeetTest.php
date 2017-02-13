@@ -1,8 +1,19 @@
 <?php
-    require_once __DIR__."/../Leet.php";
+    require_once __DIR__."/../src/Leet.php";
 
     class LeetTest extends PHPUnit_Framework_TestCase
     {
-        
+        function test_e_check()
+        {
+            // Arrange
+            $test_Leet = new Leet;
+            $input = "e";
+
+            // Act
+            $result = $test_Leet->e_check($input);
+
+            // Assert
+            $this->assertEquals("3", $result);
+        }
     }
  ?>
