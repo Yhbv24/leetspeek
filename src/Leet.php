@@ -30,5 +30,20 @@
             }
             return implode($char_replace);
         }
+
+        function i_check($input)
+        {
+            $chars = str_split($input);
+            $char_replace = [];
+            foreach( $chars as $letter) {
+                if ($letter == "I") {
+                    $letter = "1";
+                    array_push($char_replace, $letter);
+                } else {
+                    array_push($char_replace, $letter);
+                }
+            }
+            return implode($char_replace);
+        }
     }
  ?>
