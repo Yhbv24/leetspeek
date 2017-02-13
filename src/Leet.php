@@ -3,10 +3,17 @@
     {
         function e_check($input)
         {
-            if ($input == "e") {
-                $input = "3";
+            $chars = str_split($input);
+            $char_replace = [];
+            foreach( $chars as $letter) {
+                if ($letter == "e") {
+                    $letter = "3";
+                    array_push($char_replace, $letter);
+                } else {
+                    array_push($char_replace, $letter);
+                }
             }
-            return $input;
+            return implode($char_replace);
         }
 
         function o_check($input)

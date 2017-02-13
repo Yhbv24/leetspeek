@@ -7,13 +7,13 @@
         {
             // Arrange
             $test_Leet = new Leet;
-            $input = "e";
+            $input = "w3ll gr3at";
 
             // Act
             $result = $test_Leet->e_check($input);
 
             // Assert
-            $this->assertEquals("3", $result);
+            $this->assertEquals("w3ll gr3at", $result);
         }
 
         function test_o_check()
