@@ -15,5 +15,18 @@
             // Assert
             $this->assertEquals("3", $result);
         }
+
+        function test_o_check()
+        {
+            // Arrange
+            $test_Leet = new Leet;
+            $input  = "o";
+
+            // Act
+            $result = $test_Leet->o_check($input);
+
+            // Assert
+            $this->assertEquals("0", $result);
+        }
     }
  ?>

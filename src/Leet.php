@@ -8,5 +8,10 @@
             }
             return $input;
         }
+
+        function o_check($input)
+        {
+
+        }
     }
  ?>
