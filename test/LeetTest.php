@@ -20,13 +20,13 @@
         {
             // Arrange
             $test_Leet = new Leet;
-            $input  = "o";
+            $input  = "hello owl";
 
             // Act
             $result = $test_Leet->o_check($input);
 
             // Assert
-            $this->assertEquals("0", $result);
+            $this->assertEquals("hell0 0wl", $result);
         }
     }
  ?>
